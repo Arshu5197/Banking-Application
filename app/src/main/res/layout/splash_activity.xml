@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="323dp"
+        android:layout_height="205dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/inter_logo">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/bank"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="282dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:text="Basic Bank System"
+        android:textAllCaps="false"
+        android:textColor="#2979FF"
+        android:textSize="23dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/designed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by  "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF9100"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARSHAD ALI MOHAMMAD"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF9100"
+            android:visibility="invisible">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

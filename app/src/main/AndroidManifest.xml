@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bank"
+        android:label="Banking App"
+        android:roundIcon="@drawable/bank"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_white">
+
+        <activity android:name="com.example.bankingapp.splash_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.bankingapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name="com.example.bankingapp.user_list"
+            android:screenOrientation="portrait"
+            android:label="Banking System"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name="com.example.bankingapp.user_data"
+            android:parentActivityName="com.example.bankingapp.user_list"
+            android:screenOrientation="portrait"
+            android:label="User Details"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.bankingapp.sendtouser"
+            android:screenOrientation="portrait"
+            android:label="Transfer Money"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.example.bankingapp.history_list"
+            android:parentActivityName="com.example.bankingapp.user_list"
+            android:screenOrientation="portrait"
+            android:label="Transactions"
+            android:theme="@style/AppTheme"/>
+
+    </application>
+
+</manifest>
